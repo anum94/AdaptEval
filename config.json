@@ -1,0 +1,41 @@
+{
+    "exec_args" : {},
+    "exec_kwargs": {
+
+        "reference-based": true,
+        "metrics": [
+            "rouge",
+            "bertscore",
+            "vocab_overlap"
+        ],
+        "domain_vocab_path": {
+            "arxiv": "data/domain_vocabulary/temo/arxiv_top10000_vocabulary.txt",
+            "pubmed": "data/domain_vocabulary/temo/pubmed_top10000_vocabulary.txt",
+            "govreport": "data/domain_vocabulary/temo/govreport_top10000_vocabulary.txt"
+        },
+        "domain_articles": {
+            "arxiv": "data/domain_vocabulary/arxiv_articles.txt",
+            "pubmed": "data/domain_vocabulary/pubmed_articles.txt",
+            "govreport": "data/domain_vocabulary/govreport_articles.txt"
+        },
+        "input_directory": "data/predictions/pred/",
+
+        "tds-model2-model1": {
+            "model_2": "lmsys/vicuna-13b-v1.5-16k",
+            "model_1":"lmsys/vicuna-7b-v1.5-16k",
+            "path_model2_pred": "data/predictions/u3peaqsi_MODEL_lmsys-vicuna-13b-v1.5-16k_TASK_pubmed_2-SHOT_domain_adaptation_summarization.csv",
+            "num_samples": 2,
+            "ds": "arxiv",
+            "domain_vocab_path": "data/domain_vocabulary/temo/arxiv_top10000_vocabulary.txt"
+        },
+
+        "tds-0shot-fewshot": {
+            "model": "lmsys/vicuna-13b-v1.5-16k",
+            "path_model_pred": "data/predictions/u3peaqsi_MODEL_lmsys-vicuna-13b-v1.5-16k_TASK_pubmed_2-SHOT_domain_adaptation_summarization.csv",
+            "num_samples": 2,
+            "ds": "arxiv",
+            "domain_vocab_path": "data/domain_vocabulary/temo/arxiv_top10000_vocabulary.txt"
+        }
+    }
+
+}
