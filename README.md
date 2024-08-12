@@ -13,10 +13,10 @@ python compile_results.py --config <path_to_json>
 ```
 
 ```bash
-python token_dist_shift_few_shot_zero_shot.py.py --config <path_to_json> 
+python token_dist_shift_few_shot_zero_shot.py --config <path_to_json> 
 ```
 ```bash
-python token_dist_shift_model2_model1.py.py --config <path_to_json> 
+python token_dist_shift_model2_model1.py --config <path_to_json> 
 ```
 ```
 python gpt4-eval.py 
