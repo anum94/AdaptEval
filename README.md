@@ -63,7 +63,7 @@ Currently supported metrics:
 ### 3. Others
 
 - All .csv files in the input directory should have two columns "reference" and "prediction". 
-- The csv files should follow the name convention {random-name}_MODEL_{model-name}__TASK_{ds}_{task}. This naming convention helps the later group and compare the runs. 
+- The csv files should follow the name convention `{random-name}_MODEL_{model-name}_TASK_{ds}_{task}`. This naming convention helps the later group and compare the runs. 
 - Most importantly, it allows the correct mapping of predictions to their respective domain vocabulary when calculating Domain Vocabulary Overlap.
 - During the first run, the domain vocabulary is computed using the domain articles. For later runs, the previously computed domain vocabulary is used.
 - Please provide your huggingface token in .env 
