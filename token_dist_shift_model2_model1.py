@@ -97,7 +97,12 @@ def get_token_distribution(inputs, model_hf_key: str, top_k=5, max_len=2048, tru
     tokenizer.pad_token = tokenizer.eos_token  # Most LLMs don't have a pad token by default
     # load the model
 
-    model = AutoModelForCausalLM.from_pretrained(model_hf_key,)
+    model = AutoModelForCausalLM.from_pretrained(
+    model_hf_key,
+    torch_dtype=torch.bfloat16,
+    load_in_8bit=True,
+    trust_remote_code=True,
+    device_map="auto",)
 
     for input in tqdm(inputs):
         # Tokenize input text
