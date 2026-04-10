@@ -16,7 +16,7 @@
 
 ---
 
-## 🛠 Installation
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -90,7 +90,7 @@ python token_dist_shift_model2_model1.py --config configs/your_config.json
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 * **ROUGE (1, 2, L):** Measures lexical n-gram overlap.
 * **BERTScore:** Captures semantic similarity using contextual embeddings.
@@ -100,9 +100,9 @@ python token_dist_shift_model2_model1.py --config configs/your_config.json
 
 ---
 
-## ✍️ Citation
+## Citation
 
-If you use AdaptEval in your research, please cite our ACL 2024 paper:
+If you use AdaptEval in your research, please cite our paper:
 
 ```bibtex
 @inproceedings{afzal-etal-2024-adapteval,
@@ -117,7 +117,7 @@ If you use AdaptEval in your research, please cite our ACL 2024 paper:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 Feedback and contributions are welcome! 
 1. Fork the repo.
 2. Create a feature branch.
